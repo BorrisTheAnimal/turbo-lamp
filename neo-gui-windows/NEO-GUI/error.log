@@ -1,0 +1,6 @@
+System.NotSupportedException
+An attempt was made to load an assembly from a network location which would have caused the assembly to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch. See http://go.microsoft.com/fwlink/?LinkId=155569 for more information.
+   at System.Reflection.RuntimeAssembly.nLoadFile(String path, Evidence evidence)
+   at System.Reflection.Assembly.LoadFile(String path)
+   at Neo.Plugins.Plugin.LoadPlugins(NeoSystem system)
+   at Neo.Program.Main()
